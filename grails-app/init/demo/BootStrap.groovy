@@ -26,6 +26,7 @@ class BootStrap implements  Benchmark {
                 [processor: cleanupGormSaveService, flush: false, validate: true],
                 [processor: cleanupGormSaveService, flush: false, validate: false],
                 [processor: batchProcessingService, flush: false, validate: true],
+                [processor: batchProcessingService, flush: false, validate: false],
                 [processor: hibernateStatelessService, flush: false, validate: true]
         ] as List<Map>
 

@@ -1,0 +1,12 @@
+= Grails Bulk Insert
+
+Code repository of blog post http://krixisolutions.com/bulk-insert-grails-gorm/[Bulk insert with Grails GORM]
+
+This is a sample repository which illustrates how you can improve a bulk insert or update with
+
+- Traditional Save
+- Cleanup GORM
+- Batch processing
+- Hibernate Stateless Session
+
+Read http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#batch-session-batch[hibernate Session batching]

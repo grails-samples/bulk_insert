@@ -16,8 +16,8 @@ class BatchProcessingService implements BulkInsert {
         Transaction tx = session.beginTransaction()
         (1..numberOfObjects).each { counter ->
             Person person = PersonFactory.create()
-            person.save(flush: flush)
-            if(counter.mod(100)==0) {
+            person.save(flush: flush, validate: false)
+            if ( counter % 100 == 0 ) {
                 //clear session and save records after every 100 records
                 session.flush()
                 session.clear()

@@ -26,6 +26,5 @@ class CleanupGormSaveService implements BulkInsert {
         Session session = sessionFactory.currentSession
         session.flush()
         session.clear()
-        //propertyInstanceMap.get().clear()
     }
 }
