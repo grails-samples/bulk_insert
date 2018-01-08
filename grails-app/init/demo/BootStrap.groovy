@@ -24,7 +24,6 @@ class BootStrap implements  Benchmark {
                 [processor: traditionalSaveService, flush: false, validate: true],
                 [processor: traditionalSaveService, flush: false, validate: false],
                 [processor: cleanupGormSaveService, flush: false, validate: true],
-                [processor: cleanupGormSaveService, flush: true, validate: true],
                 [processor: cleanupGormSaveService, flush: false, validate: false],
                 [processor: batchProcessingService, flush: false, validate: true],
                 [processor: hibernateStatelessService, flush: false, validate: true]
